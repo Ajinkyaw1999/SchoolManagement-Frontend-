@@ -1,0 +1,60 @@
+/* student-list.component.scss */
+
+// Card styling
+.card {
+    border-radius: 0.5rem;
+    overflow: hidden;
+  }
+  
+  // Table row hover effect
+  .student-row {
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.04);
+    }
+  }
+  
+  // Empty state styling
+  .empty-state {
+    padding: 2rem;
+    
+    .empty-icon {
+      font-size: 4rem;
+      height: 4rem;
+      width: 4rem;
+      color: #c5c5c5;
+    }
+  }
+  
+  // Badge styling for subjects
+  .subject-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    
+    .badge {
+      font-weight: normal;
+      font-size: 0.75rem;
+      padding: 0.35rem 0.6rem;
+      background-color: #f0f0f0;
+      border: 1px solid #e0e0e0;
+    }
+  }
+  
+  // Make sure the table header stays visible
+  ::ng-deep .mat-sort-header-content {
+    font-weight: 600;
+  }
+  
+  // Remove box shadow from the table
+  ::ng-deep .mat-elevation-z0 {
+    box-shadow: none !important;
+  }
+  
+  // Fix form field appearance
+  ::ng-deep .mat-form-field-wrapper {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
