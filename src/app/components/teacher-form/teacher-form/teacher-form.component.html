@@ -1,0 +1,36 @@
+
+<div class="container mt-4">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>{{ isEditMode ? 'Edit' : 'Add' }} Teacher</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form [formGroup]="teacherForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-md-6">
+            <mat-form-field class="w-100 mt-3">
+              <mat-label>Name</mat-label>
+              <input matInput formControlName="name" placeholder="Enter teacher name">
+              <mat-error *ngIf="teacherForm.get('name')?.hasError('required')">Name is required</mat-error>
+              <mat-error *ngIf="teacherForm.get('name')?.hasError('minlength')">Name must be at least 2 characters</mat-error>
+            </mat-form-field>
+          </div>
+          <div class="col-md-6">
+            <mat-form-field class="w-100 mt-3">
+              <mat-label>Email</mat-label>
+              <input matInput formControlName="email" placeholder="Enter teacher email">
+              <mat-error *ngIf="teacherForm.get('email')?.hasError('required')">Email is required</mat-error>
+              <mat-error *ngIf="teacherForm.get('email')?.hasError('email')">Enter a valid email</mat-error>
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="action-buttons mt-4">
+          <button mat-button type="button" routerLink="/teachers">Cancel</button>
+          <button mat-raised-button color="primary" type="submit" [disabled]="teacherForm.invalid">
+            {{ isEditMode ? 'Update' : 'Create' }}
+          </button>
+        </div>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

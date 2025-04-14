@@ -1,0 +1,52 @@
+.jumbotron {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: .3rem;
+  }
+  
+ /* home.component.scss */
+
+.home-bg {
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .icon-bg {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .nav-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  
+  .nav-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* More reliable way to handle button styling */
+  .btn-info {
+    color: #fff;
+  }
+  
+  /* Ensure proper spacing in footer buttons */
+  .card-footer .btn {
+    padding: 0.5rem;
+  }
+  
+  @media (max-width: 768px) {
+    .icon-bg {
+      width: 60px;
+      height: 60px;
+    }
+    
+    .card-footer .btn {
+      font-size: 0.9rem;
+    }
+  }

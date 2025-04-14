@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import 'node_modules/bootstrap/scss/bootstrap';
+
+.action-button {
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 500;
+  
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+  
+    mat-icon {
+      font-size: 20px;
+    }
+  }
+  

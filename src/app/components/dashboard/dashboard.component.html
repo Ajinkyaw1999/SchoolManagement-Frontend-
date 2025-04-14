@@ -1,0 +1,79 @@
+<div class="container mt-4">
+    
+    <div class="card-header bg-white py-3">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <h2 class="mb-0 text-primary">
+              <i class="fas fa-user-graduate me-2"></i>Dashboard
+            </h2>
+            <p class="text-muted mb-0">Manage Everything in One Place</p>
+          </div>
+          
+        </div>
+    </div>
+    <div class="row">
+      <!-- Total Students Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-primary text-white">
+            <h5>Total Students</h5>
+          </div>
+          <div class="card-body d-flex justify-content-center align-items-center">
+            <h2>{{ totalStudents }}</h2>
+          </div>
+          <div class="card-footer text-end">
+            <button mat-raised-button color="accent" routerLink="/students">View Students</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Total Teachers Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-success text-white">
+            <h5>Total Teachers</h5>
+          </div>
+          <div class="card-body d-flex justify-content-center align-items-center">
+            <h2>{{ totalTeachers }}</h2>
+          </div>
+          <div class="card-footer text-end">
+            <button mat-raised-button color="accent" routerLink="/teachers">View Teachers</button>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Total Subjects Card -->
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm h-100">
+          <div class="card-header bg-warning text-white">
+            <h5>Total Subjects</h5>
+          </div>
+          <div class="card-body d-flex justify-content-center align-items-center">
+            <h2>{{ totalSubjects }}</h2>
+          </div>
+          <div class="card-footer text-end">
+            <button mat-raised-button color="accent" routerLink="/subjects">View Subjects</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Quick Actions Section -->
+    <!-- <div class="row" >
+      <div class="col-md-4 mb-4">
+        <div class="card shadow-sm">
+          <div class="card-header">
+            <h5>Quick Actions</h5>
+          </div>
+          <div class="card-body">
+            <ul class="list-unstyled">
+              <li><button mat-raised-button color="primary" routerLink="/students/new">Add New Student</button></li>
+              <li><button mat-raised-button color="primary" routerLink="/teachers/new">Add New Teacher</button></li>
+              <li><button mat-raised-button color="primary" routerLink="/subjects/new">Add New Subject</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+   -->

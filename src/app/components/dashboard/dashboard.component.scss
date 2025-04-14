@@ -1,0 +1,27 @@
+.container {
+    margin-top: 20px;
+  }
+  
+  .card {
+    height: 100%;
+  }
+  
+  .card-header {
+    font-size: 1.25rem;
+  }
+  
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+  }
+  
+  .card-footer {
+    text-align: right;
+  }
+  
+  button {
+    margin-top: 10px;
+  }
+  
